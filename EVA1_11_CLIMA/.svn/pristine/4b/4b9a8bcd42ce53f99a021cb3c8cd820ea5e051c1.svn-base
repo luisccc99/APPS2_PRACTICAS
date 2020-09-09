@@ -1,0 +1,39 @@
+/**
+ * EVA1_11_CLIMA - customizing the layout of a list view
+ * <p>
+ * written by: Luis Carlos Cruz Castillo
+ * 17550448
+ * APPS1
+ * 01/03/2020
+ */
+package com.example.eva1_11_clima;
+
+public class Weather {
+    private String cityName;
+    private String weatherDesc;
+    private int cityWeather;
+    private int imageId;
+
+    public Weather(String cityName, int cityWeather, String weatherDesc, int imagenId) {
+        this.cityName = cityName;
+        this.cityWeather = cityWeather;
+        this.weatherDesc = weatherDesc;
+        this.imageId = imagenId;
+    }
+
+    public String getCityName() {
+        return cityName;
+    }
+
+    public String getWeatherDesc() {
+        return weatherDesc;
+    }
+
+    public int getCityWeather() {
+        return cityWeather;
+    }
+
+    public int getImageId() {
+        return imageId;
+    }
+}

@@ -1,0 +1,48 @@
+/**
+ * EVA1_11_CLIMA - customizing the layout of a list view
+ * <p>
+ * written by: Luis Carlos Cruz Castillo
+ * 17550448
+ * APPS1
+ * 01/03/2020
+ */
+package com.example.eva1_11_clima;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    TextView txtCity;
+    TextView txtTmp;
+    TextView txtDesc;
+    ImageView imgWeather;
+
+
+    ListView lstClima;
+    Weather[] cities = {
+            new Weather("Chihuahua", 20, "Nublado", R.drawable.light_rain),
+            new Weather("London", 19, "Nublado", R.drawable.cloudy),
+            new Weather("New York", 6, "Nublado", R.drawable.cloudy),
+            new Weather("Tokyo", 5, "Nublado", R.drawable.snow),
+            new Weather("Sydney", 21, "Despejado", R.drawable.sunny),
+            new Weather("Los Angeles", 20, "Despejado", R.drawable.atmospher),
+            new Weather("Dubai", 25, "Despejado", R.drawable.atmospher),
+            new Weather("Dublin", 19, "Tormenta", R.drawable.thunderstorm),
+            new Weather("Detroit", 19, "Tornados", R.drawable.tornado),
+            new Weather("Moscow", 19, "Nevando", R.drawable.snow)
+    };
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        lstClima = findViewById(R.id.lstClima);
+        lstClima.setAdapter(new WeatherAdapter(this, R.layout.mi_layout, cities));
+    }
+}
