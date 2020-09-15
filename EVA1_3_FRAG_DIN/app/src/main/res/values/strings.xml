@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EVA1_3_FRAG_DIN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="blue_fragment">Blue</string>
+    <string name="red_fragment">Red</string>
+</resources>
