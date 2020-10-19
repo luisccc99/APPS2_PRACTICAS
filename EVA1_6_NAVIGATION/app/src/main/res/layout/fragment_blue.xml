@@ -4,4 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3949AB"
-    tools:context=".BlueFragment"/>
+    tools:context=".BlueFragment">
+
+    <TextView
+        android:id="@+id/text_datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

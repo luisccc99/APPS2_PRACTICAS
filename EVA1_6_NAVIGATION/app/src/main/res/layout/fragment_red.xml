@@ -6,5 +6,11 @@
     android:background="#E53935"
     tools:context=".RedFragment">
 
+    <TextView
+        android:id="@+id/text_args"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#fff" />
 
 </FrameLayout>

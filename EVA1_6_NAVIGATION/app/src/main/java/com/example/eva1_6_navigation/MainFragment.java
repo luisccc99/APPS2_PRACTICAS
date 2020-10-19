@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.ActionOnlyNavDirections;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
@@ -35,14 +36,19 @@ public class MainFragment extends Fragment {
         blue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_mainFragment2_to_blueFragment3);
+                Bundle bundle = new Bundle();
+                bundle.putString("PRUEBA", "simp september");
+                navController.navigate(R.id.action_mainFragment2_to_blueFragment3, bundle);
             }
         });
 
         red.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_mainFragment2_to_redFragment2);
+                MainFragmentDirections.ActionMainFragment2ToRedFragment2
+                        action = MainFragmentDirections.actionMainFragment2ToRedFragment2();
+                action.setMiValor(69);
+                navController.navigate(action);
             }
         });
     }
