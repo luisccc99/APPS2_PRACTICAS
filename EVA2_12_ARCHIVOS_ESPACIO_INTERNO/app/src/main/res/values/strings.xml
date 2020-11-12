@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EVA2_12_ARCHIVOS_ESPACIO_INTERNO</string>
+    <string name="nombre">Nombre</string>
+    <string name="guardar">guardar</string>
+    <string name="leer">leer</string>
+    <string name="info">info</string>
+</resources>
