@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EVA2_14_DOCUMENT_PROVIDER</string>
+    <string name="guardar">guardar</string>
+    <string name="abrir">abrir</string>
+</resources>
